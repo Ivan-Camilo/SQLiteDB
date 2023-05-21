@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SQLiteDB.Views.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana de inicio de sesion" FontSize="18" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario"/>
+            <Entry x:Name="txtClave" Placeholder="Ingrese contraseña" IsPassword="True" Keyboard="Plain"/>
+            <Button x:Name="btnInicio" Text="Iniciar Sesion" Clicked="btnInicio_Clicked"/>
+            <Button x:Name="btnRegistro" Text = "Registrar" Clicked="btnRegistro_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
