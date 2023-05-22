@@ -4,7 +4,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SQLiteDB.Views.Elemento">
     <ContentPage.Content>
-
+        <StackLayout >
+            <Label Text="Elemento Seleccionado" FontSize="18" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtId" Placeholder="ID" IsReadOnly="True"/>
+            <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+            <Entry x:Name="txtUsuario" Placeholder="Usuario" />
+            <Entry x:Name="txtClave" Placeholder="Contraseña"  Keyboard="Plain"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btActualizar" Text="ACTUALIZAR" Clicked="btActualizar_Clicked"  Grid.Row="0" Grid.Column="0" />
+                <Button x:Name="btEliminar" Text="ELIMINAR" Clicked="btEliminar_Clicked" Grid.Row="0" Grid.Column="1" />
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-

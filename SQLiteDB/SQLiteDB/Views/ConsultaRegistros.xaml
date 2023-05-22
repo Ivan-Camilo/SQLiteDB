@@ -3,8 +3,17 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SQLiteDB.Views.ConsultaRegistros">
-    <ContentPage.Content>
-        
+     <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista de Estudiantes" FontSize="18" HorizontalTextAlignment="Center"/>
+            <ListView x:Name="listaEstudiante" ItemSelected="listaEstudiante_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nombre}" Detail="{Binding Usuario}" TextColor="Black" DetailColor="Gray"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="btSalir" Text="SALIR" Clicked="btSalir_Clicked"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-

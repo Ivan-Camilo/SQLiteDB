@@ -42,6 +42,11 @@ namespace SQLiteDB.Views
 
             }
         }
+
+        void btnRegresar_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Login());
+        }
     }
 }
 
